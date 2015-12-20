@@ -15,7 +15,7 @@ CFLAGS += -Iinc -Iutil/inc
 
 OBJS := \
         src/startup_stm32f429xx.o \
-        src/system_stm32f4xx.o \
+				src/system.o \
         src/main.o \
         src/syscalls.o \
         src/uart.o \
@@ -26,6 +26,8 @@ OBJS := \
         src/cli/cmd_info.o \
         src/cli/cmd_ps.o \
         src/cli/cmd_uname.o
+
+#        src/system_stm32f4xx.o \
 
 include Makefile.stdperiph
 include Makefile.mw
