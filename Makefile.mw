@@ -1,0 +1,15 @@
+CFLAGS += -IFreeRTOS/Source/CMSIS_RTOS
+CFLAGS += -IFreeRTOS/Source/include
+CFLAGS += -IFreeRTOS/Source/portable/GCC/ARM_CM4F
+
+OBJS += \
+	src/freertos.o \
+	FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o \
+	FreeRTOS/Source/list.o \
+	FreeRTOS/Source/timers.o \
+	FreeRTOS/Source/queue.o \
+	FreeRTOS/Source/croutine.o \
+	FreeRTOS/Source/event_groups.o \
+	FreeRTOS/Source/tasks.o \
+	FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o \
+	FreeRTOS/Source/portable/MemMang/heap_4.o 

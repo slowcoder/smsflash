@@ -1,0 +1,5 @@
+*.d
+*.o
+smsflash.bin
+smsflash.elf
+smsflash.map

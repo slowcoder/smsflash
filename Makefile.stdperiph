@@ -1,0 +1,16 @@
+CFLAGS += -DSTM32F40_41xxx 
+CFLAGS += -DUSE_STDPERIPH_DRIVER
+
+CFLAGS += \
+	-ILibraries/STM32F4xx_StdPeriph_Driver/inc \
+	-ILibraries/CMSIS/Device/ST/STM32F4xx/Include \
+	-ILibraries/CMSIS/Include
+
+OBJS += \
+	Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o \
+	Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o \
+	Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o \
+	Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o \
+	Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o \
+	Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o \
+	Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
